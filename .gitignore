@@ -1,0 +1,22 @@
+# Sensitive configuration files
+.env
+config.php
+
+# Cache and temporary files
+cache/
+tmp/
+
+# Composer dependencies
+/vendor/
+
+# Logs
+*.log
+logs/
+debug.log
+
+# IDE/Editor files
+.vscode/
+.idea/
+
+# Node.js dependencies
+/node_modules/

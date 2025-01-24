@@ -1,0 +1,40 @@
+
+/* Styling for form container */
+#paymentForm {
+  
+    margin: 0 auto;
+    margin-top: 50px;
+    padding-bottom: 50px;
+  }
+  
+ 
+ 
+  
+  /* Styling for submit button */
+  button[type="submit"] {
+    background-color: #b4960e;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: rgb(102, 106, 108);
+  }
+  body{
+    background-image: url();
+    background-size:cover;
+    background-repeat: no-repeat;
+  }
+
+  .display-order .vat{
+    margin-top: 2rem;
+    font-size: 2.5rem;
+    color:var(--light-color);
+ }
+ 
+ .display-order .vat span{
+    color:red;
+ }
