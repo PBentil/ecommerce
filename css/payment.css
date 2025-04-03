@@ -1,9 +1,8 @@
 
 /* Styling for form container */
 #paymentForm {
-  
-    margin: 0 auto;
-    margin-top: 50px;
+
+    margin: 50px auto 0;
     padding-bottom: 50px;
   }
   
@@ -11,8 +10,8 @@
  
   
   /* Styling for submit button */
-  button[type="submit"] {
-    background-color: #b4960e;
+  .form-submit button {
+    background-color: darkgreen;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -20,11 +19,10 @@
     cursor: pointer;
   }
   
-  button[type="submit"]:hover {
-    background-color: rgb(102, 106, 108);
+  .form-submit button:hover {
+    background-color: green;
   }
   body{
-    background-image: url();
     background-size:cover;
     background-repeat: no-repeat;
   }

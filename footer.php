@@ -1,6 +1,4 @@
 <section class="footer">
-    <link rel="stylesheet" type="text/css" href="./css/footer.css">
-
    <div class="box-container">
 
       <div class="box">
@@ -23,8 +21,8 @@
          <h3>contact info</h3>
          <p> <i class="fas fa-phone"></i> +233-50-984-0139 </p>
          <p> <i class="fas fa-phone"></i> +233-53-594-6567 </p>
-         <p> <i class="fas fa-envelope"></i> BCICT22349@ttu.edu.gh </p>
-         <p> <i class="fas fa-map-marker-alt"></i> TTU, TAKORADI - GHANA </p>
+         <p> <i class="fas fa-envelope"></i> paapabentil122@gmail.com </p>
+         <p> <i class="fas fa-map-marker-alt"></i>  TAKORADI - GHANA </p>
       </div>
 
       <div class="box">

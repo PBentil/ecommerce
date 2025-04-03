@@ -76,13 +76,6 @@ if(isset($_GET['delete_all'])){
             <input type="submit" name="update_cart" value="update" class="option-btn">
          </form>
 
-
-
-
-
-
-
-
          
          <div class="sub-total"> sub total : <span>GH₵<?php echo $sub_total = ($fetch_cart['quantity'] * $fetch_cart['price']); ?></span> </div>
          
