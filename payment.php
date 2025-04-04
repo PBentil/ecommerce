@@ -1,4 +1,5 @@
 <?php
+global $conn;
 include 'config.php';
 session_start();
 
@@ -82,7 +83,6 @@ $grand_total1 = $grand_total + $vat;
         </div>
 
         <div class="form-submit">
-            <!-- Prevent default form submission and call payWithPaystack() -->
             <button type="button" onclick="payWithPaystack()">Pay Now</button>
         </div>
     </form>
@@ -101,11 +101,18 @@ $grand_total1 = $grand_total + $vat;
             return;
         }
 
-        // Setup the Paystack payment handler
+        amount = parseFloat(amount); // Convert string to float
+        if (isNaN(amount) || amount <= 0) {
+            alert("Invalid amount. Please try again.");
+            return;
+        }
+
+        let amountInPesewas = Math.round(amount * 100); // Convert to pesewas (GHS currency unit)
+
         let handler = PaystackPop.setup({
             key: 'pk_live_2db13dc69ff42532024b0696aec42358a614422c', // Replace with your Paystack Public Key
             email: email,
-            amount: amount * 100, // Convert to kobo
+            amount: amountInPesewas, // Use integer amount
             currency: 'GHS',
             ref: 'txn_' + Math.floor((Math.random() * 1000000000) + 1), // Unique transaction ref
             onClose: function () {
@@ -123,6 +130,7 @@ $grand_total1 = $grand_total + $vat;
         // Open the Paystack inline iframe
         handler.openIframe();
     }
+
 </script>
 
 <?php include 'footer.php'; ?>
